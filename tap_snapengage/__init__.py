@@ -88,7 +88,7 @@ def do_sync(client, catalog, state, config):
             LOGGER.info("%s: Skipping - not selected", stream_name)
             continue
 
-        sub_stream_names = SUB_STREAMS.get(stream_name)
+        # sub_stream_names = SUB_STREAMS.get(stream_name)
 
         # parent stream will sync sub stream
         # if stream_name in all_sub_stream_names:
