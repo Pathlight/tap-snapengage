@@ -48,3 +48,14 @@ class SnapEngageAPI:
                 break
 
         return resp.json()
+
+    def paging_get(self, url, results_key, params):
+
+        next_page = url
+
+        while next_page:
+            data = self.get(next_page, params)
+            for record in data[results_key]:
+                yield record
+
+            next_page = data.get('linkToNextSetOfResults')

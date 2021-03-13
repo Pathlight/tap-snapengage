@@ -1,0 +1,295 @@
+{
+    "type":[
+        "null",
+        "object"
+    ],
+    "additionalProperties":false,
+    "properties":{
+        "id":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "url":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "type":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "requested_by":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "description":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "created_at_date":{
+            "type":[
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "created_at_seconds":{
+            "type":[
+                "null",
+                "integer"
+            ]
+        },
+        "created_at_milliseconds":{
+            "type":[
+                "null",
+                "integer"
+            ]
+        },
+        "proactive_chat":{
+            "type":[
+                "null",
+                "boolean"
+            ]
+        },
+        "page_url":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "referrer_url":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "entry_url":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "ip_address":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "user_agent":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "browser":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "os":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "country_code":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "country":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "region":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "city":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "latitude":{
+            "type":[
+                "null",
+                "number"
+            ]
+        },
+        "longitude":{
+            "type":[
+                "null",
+                "number"
+            ]
+        },
+        "source_id":{
+            "type":[
+                "null",
+                "integer"
+            ]
+        },
+        "chat_waittime":{
+            "type":[
+                "null",
+                "integer"
+            ]
+        },
+        "chat_duration":{
+            "type":[
+                "null",
+                "integer"
+            ]
+        },
+        "chat_agent_id":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "chat_agent_alias":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "language_code":{
+            "type":[
+                "null",
+                "string"
+            ]
+        },
+        "transcripts":{
+            "type":[
+                "null",
+                "array"
+            ],
+            "items":{
+                "type":[
+                    "null",
+                    "object"
+                ],
+                "additionalProperties": false,
+                "properties":{
+                    "id": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "date": {
+                        "type": [
+                            "null",
+                            "integer"
+                        ]
+                    },
+                    "date_seconds": {
+                        "type": [
+                            "null",
+                            "integer"
+                        ]
+                    },
+                    "date_milliseconds": {
+                        "type": [
+                            "null",
+                            "integer"
+                        ]
+                    },
+                    "alias": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "message": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "translations": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    }
+                }
+            }
+        },
+        "operator_variables":{
+            "type":[
+                "null",
+                "array"
+            ],
+            "items":{
+                "type":[
+                    "null",
+                    "object"
+                ],
+                "additionalProperties": false,
+                "properties":{
+                    "name": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "value": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    }
+                }
+            }
+        },
+        "labels":{
+            "type":[
+                "null",
+                "array"
+            ],
+            "items":{
+                "type":[
+                    "null",
+                    "object"
+                ],
+                "additionalProperties": false,
+                "properties":{
+                    "name": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "value": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    }
+                }
+            }
+        },
+        "destination_url":{
+            "type":[
+                "null",
+                "string"
+            ]
+        }
+    }
+}
