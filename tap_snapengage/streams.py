@@ -58,7 +58,10 @@ class Stream():
             record = {k: self.transform_value(k, v) for (k, v) in row.items()}
             yield(self.stream, record)
 
-            curr_synced_thru = max(curr_synced_thru, record.get(self.replication_key))
+            bookmark_timestamp = row.get(self.replication_key)
+            bookmark_date = datetime.datetime.utcfromtimestamp(bookmark_timestamp/1000.0).replace(tzinfo=pytz.utc)
+            date_for_bookmark = bookmark_date.strftime('%Y-%m-%d')
+            curr_synced_thru = max(curr_synced_thru, date_for_bookmark)
 
         self.update_bookmark(state, curr_synced_thru)
 
